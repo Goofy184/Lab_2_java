@@ -17,12 +17,6 @@ public class Main {
         System.out.println("Task 2: " + string1.substring(0, string1.lastIndexOf(",") + 1));
 
         // Task 3
-        String string2= " ";
-        for (int i=string1.length()-1; i>=0; i--) {
-            string2 = string2 + string1.charAt(i);
-        }
-        System.out.println("Task 3:" + string2);
-
         StringBuilder text2 = new StringBuilder();
         text2.append(string1);
         text2.reverse();
@@ -46,12 +40,9 @@ public class Main {
         System.out.println("Task 7: Індекс останньої букви 'r' :" + string1.lastIndexOf("r"));
 
         // Task 8
-        StringBuffer stringBuffer = new StringBuffer("Spas Oleh Ihorovych 12.05.2004");
+        StringBuffer stringBuffer = new StringBuffer();
+        stringBuffer.append ("Spas Oleh Ihorovych 12.05.2004");
         System.out.println("Task 8: " + stringBuffer);
-
-        StringBuffer stringBuffer1 = new StringBuffer();
-        stringBuffer1.append ("Spas Oleh Ihorovych 12.05.2004");
-        System.out.println("Task 8: " + stringBuffer1);
 
         // Task 9
         System.out.println("Task 9: " + stringBuffer.substring( 0, stringBuffer.lastIndexOf("h") + 1));
